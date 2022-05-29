@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height: 900px;
+            align-items: center;
+            flex-direction: column;
+        }
+        .header{
+            background-color: grey;
+            width: 950px;
+            height: 150px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+        }
+        .title{
+            font-size: 60px;
+            font-weight: thick;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .search input{
+            font-size: 25px;
+            border:5px solid #111;
+
+        }
+        .login button{
+            background-color: rgb(81, 143, 229);
+            font-size: 25px;
+            color: aliceblue;    
+        }
+        .main{
+            
+            display: flex;
+            height: 750px;
+            width: 950px;
+
+        }
+        .main1{
+           
+            width: 550px;
+        }
+        .ninja1{
+            border: 5px solid #111;
+            height: 250px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        .ninjaleft{
+            
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .ninjaleft button{
+            background-color: rgb(240, 207, 39);
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+        .ninjaright{
+            
+            width:75%;
+            font-size: 30px;
+            align-self: center;
+            padding-left: 10px;
+        }
+        .side{
+            
+            width: 400px;
+        }
+        .side1{
+            border: 5px solid #111;
+            height: 200px;
+            margin-top: 50px;
+            margin-left: 50px;
+            font-size: 40px;
+            padding: 5px;
+        }
+        .side1 button{
+            background-color: rgb(67, 153, 108);
+            font-size: 30px;
+            padding: 5px 32px;
+            position: relative;
+            left: 40px;
+            top: 30px;         
+        }
+
+    </style>
+    <script src="ButtonClicker.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Dojonary</div>
+            <div class="search"><input type="text" placeholder="Search.."></div>
+            <div class="login"><button type="button" onclick="logout(this)">Login</button></div>
+        </div>
+        <div class="main">
+            <div class="main1">
+                <div class="ninja1">
+                    <div class="ninjaleft"><h1>ninja</h1>noun <br>Plural: ninjas
+                        <br><button type="button" onclick="alert('Ninja was liked')">13 likes</button>
+                    </div>
+                    <div class="ninjaright">A practitioner skilled in the <a href="https://www.w3schools.com/">japanese</a> art of <a href="https://www.w3schools.com/">ninjutsu</a></div>
+                </div>
+                <div class="ninja1">
+                    <div class="ninjaleft">
+                        <h1>ninja</h1>noun <br>Plural: ninjas
+                        <br><button type="button" onclick="alert('Ninja was liked')">37 likes</button>
+                    </div>
+                    <div class="ninjaright">A <a href="https://www.w3schools.com/">programmer</a> who breaks down problems with <a href="https://www.w3schools.com/">zen</a>-like focus</div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="side1">Dojonary is <br> definded by <b>YOU</b>
+                    <br> <button type="button" onclick="added(this)">Add Definition</button></div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
